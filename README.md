@@ -2,10 +2,12 @@
 
 ## Project Overview
 
-This project showcases a comprehensive data engineering workflow that encompasses data extraction, cleaning, transformation, and visualization. The objective was to extract information about basketball venues worldwide from a Wikipedia page, cleanse and transform the data, and load it into Azure Data Lake for further analysis in Azure Synapse Analytics. Finally, the insights were visualized using Tableau, providing valuable analytics on the global distribution and characteristics of basketball venues.
+This project showcases a comprehensive data engineering workflow that encompasses data extraction, cleaning, transformation, and visualization. The objective was to extract data from [List of basketball arenas](https://en.wikipedia.org/wiki/List_of_basketball_arenas) worldwide, cleanse and transform the data, and load it into Azure Data Lake for further analysis in Azure Synapse Analytics. Finally, the insights were visualized using Tableau, providing valuable analytics on the global distribution and characteristics of basketball venues.
 
 ## Technologies Used
- 
+
+This project utilizes the following technologies: 
+
  - Python: For data extraction and transformation.
  - BeautifulSoup and Requests: For web scraping.
  - Azure Data Lake: For scalable storage
@@ -31,43 +33,46 @@ The extracted data includes key attributes like:
  - Associated basketball teams
  - Image links
 
- ## Data Transformation
+## Data Transformation
 
  After extraction, the raw data was cleaned and transformed to ensure quality and consistency.
 
- ## Cleaning Processes
+## Cleaning Processes
 
   - Cleaned and normalized text fields by removing special characters and unnecessary artifacts.
   - Handled edge cases such as missing data or extra annotations in the text.
   - Fetched latitude and longitude for venue locations using the MapQuest API.
   - Appended a default placeholder image for missing image fields.
 
-  ## Data Loading and Analytics
+ ## Data Loading and Analytics
 
-  ## Data Lake Storage
+  1. ## Data Lake Storage
 
   The transformed data was uploaded to Azure Data Lake, leveraging its scalable storage for big data analytics.
 
-  ## Azure Synapse Analytics
+  2. ## Azure Synapse Analytics
 
-  The data was moved from Azure Data Lake to Azure Synapse Analytics. Here, the data was integrated into a structured database for OLAP operations. Using Synapse's SQL capabilities, queries and aggregations were run to generate meaningful insights, such as:
+  The data was moved from Azure Data Lake to Azure Synapse Analytics. Here, the data was integrated into a structured database for OLAP operations. Using Synapse's SQL capabilities, 
+  queries and aggregations were run to generate meaningful insights, such as:
 
   - Regional distribution of basketball venues.
-  - Capacity trends across different continents.
+  - Capacity trends across different countries.
 
-  ## Visualization
+ ## Visualization
 
-  The processed data was visualized using Tableau. A dashboard was created to:
+ The processed data was visualized using Tableau. A dashboard was created to:
 
   - Display the global distribution of basketball venues on a map.
   - Highlight top venues by seating capacity.
   - Provide interactive filters for region-specific analysis.
 
-  ## Orchestration
+ ## Orchestration
 
-  The entire workflow was orchestrated using Apache Airflow. Key components included:
+ The entire workflow was orchestrated using Apache Airflow. Key components included:
   - DAGs for scheduling and managing tasks.
   - PythonOperators for implementing data extraction and transformation logic.
   
   This orchestration ensured efficient and automated execution of the pipeline.
+
+  Many thanks to [Yusuf Ganiyu](https://github.com/airscholar) for inspiring this project.
 
