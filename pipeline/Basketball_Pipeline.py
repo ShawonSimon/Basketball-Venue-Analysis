@@ -2,7 +2,6 @@ import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 import json
-from geopy import Nominatim
 import time
 from datetime import datetime
 from geopy.geocoders import MapQuest
