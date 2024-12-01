@@ -4,6 +4,9 @@
 
 This project showcases a comprehensive data engineering workflow that encompasses data extraction, cleaning, transformation, and visualization. The objective was to extract data from [List of basketball arenas](https://en.wikipedia.org/wiki/List_of_basketball_arenas) worldwide, cleanse and transform the data, and load it into Azure Data Lake for further analysis in Azure Synapse Analytics. Finally, the insights were visualized using Tableau, providing valuable analytics on the global distribution and characteristics of basketball venues.
 
+## Project Achitecture
+![](https://github.com/ShawonSimon/Basketball-Venue-Analysis/blob/main/screenshots/projectAchitecture.jpg?raw=true)
+
 ## Technologies Used
 
 This project utilizes the following technologies: 
